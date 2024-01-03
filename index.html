@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online food ordering website</title>
+    <!-- link css file -->
+    <link rel="stylesheet" href="styl.css">
+    <link rel="stylesheet" href="./payment.html">
+    <link rel="stylesheet" href="./offer.html">
+    <link rel="stylesheet" href="./success.html">
+    <link rel="stylesheet" href="./login.html">
+    <link rel="stylesheet" href="./addtocart.html">
+    <!-- connect font link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <script>
+        function done(){
+            alert("Added to cart");
+        }
+    </script>
+    <!-- desktop view -->
+    <div id="container" class="container">
+        <div id="menu">
+           <div class="brand-logo">
+              <img src="images/logo.jpg" alt="logo">
+              <h1>Food Zone</h1>
+           </div>
+           <div class="menu-item">
+              <a href="./about.html">About</a>
+              <a href="./try.html">Your orders</a>
+              <a href="#">Whistlist</a>
+              <a href="./offer.html">Special Offers</a>
+              <!-- <a href="#">Notifications</a> -->
+              <a href="./payment.html">Payment</a>
+              <a href="./contact.html">Help</a>   
+          </div>
+        </div>
+        <div id="food-container">
+            <div id="header">
+                <div class="add-box">
+                    <i class="fa fa-map-marker your-address" id="table"> Table No: 4</i>
+                </div>
+                <div class="util">
+                    <i class="fa fa-search">Search</i>
+                    <a href="./offer.html"><i class="fa fa-tags">Offers</i></a>
+                    <a href="./try.html"><i class="fa fa-cart-plus" id="cart-plus">2 Items</i></a>
+                </div>
+            </div>
+            <div id="food-items" class="food-items">
+                 <div id="biryani">
+                    <p id="category">Biryani</p>
+                    <div id="item-card">
+                        <div id="card-top">
+                            <i class="fa fa-star" id="rating"> 3.0</i>
+                            <i class="fa fa-heart-o add-to-cart"></i>
+                        </div>
+                        <img src="images/biryani/biryani.jpeg" alt="">
+                        <button type="button" onclick="done()">Add to cart</button>
+                        <p id="item-name">Kunda Biryani</p>
+                        <p id="item-price">Rs 250.00</p>
+                    </div>
+                    <div id="item-card">
+                        <div id="card-top">
+                            <i class="fa fa-star" id="rating"> 3.2</i>
+                            <i class="fa fa-heart-o add-to-cart"></i>
+                        </div>
+                        <img src="images/biryani/biryani1.jpeg" alt="">
+                      <button type="button" onclick="done()">Add to cart</button>
+                        <p id="item-name">Dum Biryani</p>
+                        <p id="item-price">Rs 225.00</p>
+                    </div>
+                    <div id="item-card">
+                        <div id="card-top">
+                            <i class="fa fa-star" id="rating"> 3.0</i>
+                            <i class="fa fa-heart-o add-to-cart"></i>
+                        </div>
+                        <img src="images/biryani/biryani2.jpeg" alt="">
+                        <button type="button" onclick="done()">Add to cart</button>
+                        <p id="item-name">gongura Biryani</p>
+                        <p id="item-price">Rs 220.00</p>
+                    </div>
+                    <div id="item-card">
+                        <div id="card-top">
+                            <i class="fa fa-star" id="rating"> 3.4</i>
+                            <i class="fa fa-heart-o add-to-cart"></i>
+                        </div>
+                        <img src="images/biryani/biryani3.jpeg" alt="">
+                        <button type="button" onclick="done()">Add to cart</button>
+                        <p id="item-name">Kadai Biryani</p>
+                        <p id="item-price">Rs 250.00</p>
+                    </div>
+                    <div id="item-card">
+                        <div id="card-top">
+                            <i class="fa fa-star" id="rating"> 4.0</i>
+                            <i class="fa fa-heart-o add-to-cart"></i>
+                        </div>
+                        <img src="images/biryani/biryani4.jpeg" alt="">
+                        <button type="button" onclick="done()">Add to cart</button>
+                        <p id="item-name">Tawa Biryani</p>
+                        <p id="item-price">Rs 290.00</p>
+                    </div>
+                    <div id="item-card">
+                        <div id="card-top">
+                            <i class="fa fa-star" id="rating"> 3.0</i>
+                            <i class="fa fa-heart-o add-to-cart"></i>
+                        </div>
+                        <img src="images/biryani/biryani5.jpeg" alt="">
+                        <button type="button" onclick="done()">Add to cart</button>
+                        <p id="item-name">KullaBiryani</p>
+                        <p id="item-price">Rs 250.00</p>
+                    </div>
+                    <div id="item-card">
+                        <div id="card-top">
+                            <i class="fa fa-star" id="rating"> 3.0</i>
+                            <i class="fa fa-heart-o add-to-cart"></i>
+                        </div>
+                        <img src="images/biryani/biryani6.jpeg" alt="">
+                        <button type="button" onclick="done()">Add to cart</button>
+                        <p id="item-name">fry Biryani</p>
+                        <p id="item-price">Rs 250.00</p>
+                    </div>
+                </div>
+                <div id="paneer">
+                    <p id="category">Paneer</p>
+                    <div id="item-card">
+                        <div id="card-top">
+                            <i class="fa fa-star" id="rating"> 4.1</i>
+                            <i class="fa fa-heart-o add-to-cart"></i>
+                        </div>
+                        <img src="images/paneer/paneer1.jpeg" alt="">
+                        <button type="button" onclick="done()">Add to cart</button>
+                        <p id="item-name">Paneer Tikka</p>
+                        <p id="item-price">Rs 100.00</p>
+                    </div>
+                    <div id="item-card">
+                        <div id="card-top">
+                            <i class="fa fa-star" id="rating"> 4.1</i>
+                            <i class="fa fa-heart-o add-to-cart"></i>
+                        </div>
+                        <img src="images/paneer/paneer2.jpg" alt="">
+                        <button type="button" onclick="done()">Add to cart</button>
+                        <p id="item-name">Paneer Tikka</p>
+                        <p id="item-price">Rs 100.00</p>
+                    </div>
+                    <div id="item-card">
+                        <div id="card-top">
+                            <i class="fa fa-star" id="rating"> 4.1</i>
+                            <i class="fa fa-heart-o add-to-cart"></i>
+                        </div>
+                        <img src="images/paneer/paneer3.jpeg" alt="">
+                        <button type="button" onclick="done()">Add to cart</button>
+                        <p id="item-name">Paneer Tikka</p>
+                        <p id="item-price">Rs 100.00</p>
+                    </div>
+                    <div id="item-card">
+                        <div id="card-top">
+                            <i class="fa fa-star" id="rating"> 4.1</i>
+                            <i class="fa fa-heart-o add-to-cart"></i>
+                        </div>
+                        <img src="images/paneer/paneer4.jpeg" alt="">
+                        <button type="button" onclick="done()">Add to cart</button>
+                        <p id="item-name">Paneer Tikka</p>
+                        <p id="item-price">Rs 100.00</p>
+                    </div>
+                </div>
+                <div id="Chicken">
+                    <p id="category">Chicken</p>
+                    <div id="item-card">
+                        <div id="card-top">
+                            <i class="fa fa-star" id="rating"> 4.0</i>
+                            <i class="fa fa-heart-o add-to-cart"></i>
+                        </div>
+                        <img src="images/chicken/chicken1.jpg" alt="">
+                        <button type="button" onclick="done()">Add to cart</button>
+                        <p id="item-name">Chicken curry</p>
+                        <p id="item-price">Rs 450.00</p>
+                    </div>
+                    <div id="item-card">
+                        <div id="card-top">
+                            <i class="fa fa-star" id="rating"> 4.0</i>
+                            <i class="fa fa-heart-o add-to-cart"></i>
+                        </div>
+                        <img src="images/chicken/chicken2.jpg" alt="">
+                        <button type="button" onclick="done()">Add to cart</button>
+                        <p id="item-name">Spicy chicken curry</p>
+                        <p id="item-price">Rs 250.00</p>
+                    </div>
+                    <div id="item-card">
+                        <div id="card-top">
+                            <i class="fa fa-star" id="rating"> 4.0</i>
+                            <i class="fa fa-heart-o add-to-cart"></i>
+                        </div>
+                        <img src="images/chicken/chicken3.jpg" alt="">
+                        <button type="button" onclick="done()">Add to cart</button>
+                        <p id="item-name">tangdi chicken curry</p>
+                        <p id="item-price">Rs 350.00</p>
+                    </div>
+                    <div id="item-card">
+                        <div id="card-top">
+                            <i class="fa fa-star" id="rating"> 4.0</i>
+                            <i class="fa fa-heart-o add-to-cart"></i>
+                        </div>
+                        <img src="images/chicken/chicken4.jpeg" alt="">
+                        <button type="button" onclick="done()">Add to cart</button>
+                        <p id="item-name">broat chicken curry</p>
+                        <p id="item-price">Rs 150.00</p>
+                    </div>
+                </div>
+                <div id="chinese">
+                    <p id="category">Chinese</p>
+                    <div id="item-card">
+                        <div id="card-top">
+                            <i class="fa fa-star" id="rating"> 3.8</i>
+                            <i class="fa fa-heart-o add-to-cart"></i>
+                        </div>
+                        <img src="images/chinese/specialofferBurger.jpg" alt="">
+                        <button type="button" onclick="done()">Add to cart</button>
+                        <p id="item-name">Burger</p>
+                        <p id="item-price">Rs 200.00</p>
+                    </div>
+                    <div id="item-card">
+                        <div id="card-top">
+                            <i class="fa fa-star" id="rating"> 4,3</i>
+                            <i class="fa fa-heart-o add-to-cart"></i>
+                        </div>
+                        <img src="images/chinese/noodl.jpeg" alt="">
+                        <button type="button" onclick="done()">Add to cart</button>
+                        <p id="item-name">Noodles</p>
+                        <p id="item-price">Rs 120.00</p>
+                    </div>
+                    <div id="item-card">
+                        <div id="card-top">
+                            <i class="fa fa-star" id="rating"> 4.2</i>
+                            <i class="fa fa-heart-o add-to-cart"></i>
+                        </div>
+                        <img src="images/chinese/noodle1.webp" alt="">
+                        <button type="button" onclick="done()">Add to cart</button>
+                        <p id="item-name">chezwan noodles</p>
+                        <p id="item-price">Rs 220.00</p>
+                    </div>
+                    <div id="item-card">
+                        <div id="card-top">
+                            <i class="fa fa-star" id="rating"> 4.8</i>
+                            <i class="fa fa-heart-o add-to-cart"></i>
+                        </div>
+                        <img src="images/chinese/noodles.jpg" alt="">
+                        <button type="button" onclick="done()">Add to cart</button>
+                        <p id="item-name">korean Noodles</p>
+                        <p id="item-price">Rs 320.00</p>
+                    </div>
+                </div>
+                <div id="south-indian">
+                    <p id="category">South-Indian Special</p>
+                    <div id="item-card">
+                        <div id="card-top">
+                            <i class="fa fa-star" id="rating"> 4.8</i>
+                            <i class="fa fa-heart-o add-to-cart"></i>
+                        </div>
+                        <img src="images/sounthindia/dosa.jpeg" alt="">
+                        <button type="button" onclick="done()">Add to cart</button>
+                        <p id="item-name">Masala Dosa</p>
+                        <p id="item-price">Rs 80.00</p>
+                    </div>
+                    <div id="item-card">
+                        <div id="card-top">
+                            <i class="fa fa-star" id="rating"> 4.8</i>
+                            <i class="fa fa-heart-o add-to-cart"></i>
+                        </div>
+                        <img src="images/sounthindia/puri.jpeg" alt="">
+                        <button type="button" onclick="done()">Add to cart</button>
+                        <p id="item-name">puri chutny</p>
+                        <p id="item-price">Rs 80.00</p>
+                    </div>
+                    <div id="item-card">
+                        <div id="card-top">
+                            <i class="fa fa-star" id="rating"> 4.1</i>
+                            <i class="fa fa-heart-o add-to-cart"></i>
+                        </div>
+                        <img src="images/sounthindia/vada.jpeg" alt="">
+                        <button type="button" onclick="done()">Add to cart</button>
+                        <p id="item-name">special vada</p>
+                        <p id="item-price">Rs 80.00</p>
+                    </div>
+                </div>
+            </div>
+            <!-- <div id="cart-page" class="cart-toggle">
+                <p id="cart-title">Cart-Items</p>
+                <p id="m-total-amount">Total Amount: Rs 500</p>
+                <table>
+                   <thead>
+                    <td>Item</td>
+                    <td>Name</td>
+                    <td>Quantity</td>
+                    <td>Price</td>
+                   </thead>
+                   <tbody id="table-body">
+                    <tr><td><img src="images/biryani/biryani.jpeg" alt="img"></td>
+                        <td>Kunda Biryani</td>
+                        <td>
+                            <button class="decrease-item">-</button>
+                            <span>2</span>
+                            <button class="increase-item">+</button>
+                        </td>
+                    <td>250</td>
+                    </tr>
+                    
+                   </tbody>
+                </table>
+            </div> -->
+        </div>
+        <div id="cart">
+          <div class="taste-header">
+               <div class="user">
+                   <i class="fa fa-user-circle">
+                   <a href="./login.html"> Account</a>
+                   </i>
+              </div>
+           </div>
+           <div id="category-list">
+             <p class="item-menu">Go For Hunt</p>
+             <div class="border">
+                 <div class="list-card">
+                    <img src="/images/pizzza.jpg" alt="list">
+                    <a href="" class="list-name">Biryani</a>
+                 </div>
+                 <div class="list-card">
+                    <img src="/images/pizzza.jpg" alt="list">
+                    <a href="" class="list-name">Pizza</a>
+                 </div>
+                 <div class="list-card">
+                    <img src="/images/pizzza.jpg" alt="list">
+                    <a href="" class="list-name">Pizza</a>
+                 </div>
+                 <div class="list-card">
+                    <img src="/images/pizzza.jpg" alt="list">
+                    <a href="" class="list-name">Pizza</a>
+                 </div>
+                 <div class="list-card">
+                    <img src="/images/pizzza.jpg" alt="list">
+                    <a href="" class="list-name">Pizza</a>
+                 </div>
+                 <div class="list-card">
+                    <img src="/images/pizzza.jpg" alt="list">
+                    <a href="" class="list-name">Pizza</a>
+                 </div>
+             </div>  
+            </div>
+
+          <!-- <div id="checkout" class="cart-toggle" ></div>
+              <p id="total-item">Total Item: 2</p>
+              <p id="total-price">Total Amount: Rs 500.00</p>
+              <button class="cart-btn" href="./payment.html">Checkout</button>
+          </div> -->
+        </div>
+    </div>
+    <!-- javascript file -->
+    <script type="module" src="./index.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,445 @@
+:root{
+    --primaryColor: #FFA500;
+  --secondaryColor: #008080;
+  --middlecolor:lavender;
+  --whiteColor: #fff;
+  --blackColor: #222;
+  --softGreenColor:#eee1ca;
+  --darkGreyColor: #a7a7a7;
+  --greyColor: #c5bfbf; 
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+.container{
+    display: grid;
+    grid-template-columns: 250px 1fr 300px;
+    height: 100%;
+    overflow: hidden;
+}
+/* menu design */
+#menu{
+    background-color:var(--primaryColor) ;
+}
+.brand-logo{
+    font-size: medium;
+    text-align: center;
+    padding: 0 30px;
+}
+.brand-logo img{
+    width: 150px;
+    height: 150px;
+    margin-top: 1px;
+    padding: 3%;
+    border-radius: 30px;
+}
+.menu-item a{
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 8px 30px;
+    margin: 12px 0;
+    color: var(--blackColor);
+    font-weight: 300;
+}
+.menu-item a:hover{
+    background-color: var(--whiteColor);
+    border-radius: 30px;
+}
+
+#food-container{
+    background-color: var(--middlecolor);
+    overflow: scroll;
+    overflow-x: hidden;
+    box-sizing: content-box;
+}
+#header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    position: sticky;
+    top: 0;
+    background: whitesmoke;
+    z-index: 1;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+#header, .table{
+    font-size: 20px;
+}
+.your-address{
+    border: 1px solid indianred;
+    color: indianred;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 150px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+.add-box i{
+    font-size: 20px;
+}
+.util i, .user i{
+    font-size: 18px;
+    margin: 0 16px;
+    border: 1px solid crimson;
+    padding: 8px 16px;
+    color: crimson;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.util i:active, .user i:active{
+    color: white;
+    background: crimson;
+}
+.food-items{
+    /* display: none; */
+
+}
+#biryani,#chinese,#vegetable,#south-indian,#paneer,#chicken,#pizza{
+    margin-top: 40px;
+}
+#paneer #item-card,#pizza #item-card,#chicken #item-card,#chinese #item-card{
+    background: rgb(57, 208, 120);
+}
+#category-name, #category{
+    margin: 10px;;
+    font-size: 35px;
+    color: rgb(181, 53, 7);
+}
+#item-card{
+    width: 180px;
+    height: 290px;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    background: rgb(253,221,226);
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+}
+#card-top{
+    display: flex;
+    margin: 5px 0;;
+    justify-content: space-between;
+}
+#rating{
+    padding: 7px;
+    color: goldenrod;
+    background-color: black;
+    font-size: 14px;
+    border-radius: 14px;
+}
+.fa-heart-o{
+    padding: 6px;
+    background: white;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.toggle-heart{
+    background-color: orangered;
+    color: white;
+}
+#item-card img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+    margin-bottom: 15px;
+    transition: 0.5s all ease-in-out;
+}
+#item-card:hover img{
+    transform: scale(1.2);
+}
+#item-name{
+    margin: 5px 0;;
+    font-weight: 600;
+    color: darkslategrey;
+    font-size: 17px;
+}
+#item-price{
+    margin: 0;
+    color: rgb(2,27,27);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+#cart{
+    background-color: var(--secondaryColor);
+    overflow-y: scroll;
+}
+.taste-header{
+    padding-top: 40px;
+    padding-bottom: 10px;
+    position: sticky;
+    top: 0;
+    background-color: whitesmoke;
+}
+.item-menu{
+    margin: 0;
+    font-size: 30px;
+    margin-top: 40px;
+    color:var(--blackColor);
+    background:var(--secondaryColor) ;
+}
+.border{
+    width: 80px;
+    height: 2px;
+    padding: 2px;
+    margin: 3px 0;
+    margin-bottom: 30px;
+    border-radius: 2px;
+    background: var(--primaryColor);
+}
+.list-card{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+.list-card:hover{
+    background: var(--primaryColor);
+    border-radius: 15px;
+}
+.list-card:hover img{
+    transition: 0.5s all ease-in-out;
+    transform: scale(1.2);
+}
+.list-card img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.list-name{
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color:var(--whiteColor);
+}
+#category-list{
+    display: none;
+}
+.cart-toggle{
+    /* display: none; */
+
+}
+#cart-page{
+    background-color: var(--whiteColor);
+    margin: 40px 10px;
+    margin-right: 50px;
+    padding: 20px 30px;
+    padding-bottom: 30px;
+    position: relative;
+}
+#cart-title{
+    font-size: 35px;
+    margin: 0;
+    color: indianred;
+}
+#cart-page table{
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+#cart-page table thead td{
+    font-size: 25px;
+    padding-bottom: 10px ;
+}
+#m-total-amount{
+    display: none;
+}
+#cart-page table tbody td{
+    padding: 10px 0;
+    font-size: 20px;
+}
+#cart-page table tbody button{
+    outline: none;
+    border: none;
+    font-size: 16px;
+    background: none;
+    background-color: lightseagreen;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 0 5px;
+    padding: 5px;
+}
+#cart-page table tbody img{
+    width: 85px;
+    height: 85px;
+    border-radius: 50px;
+}
+#checkout{
+    text-align: center;
+    margin: 40px auto;;
+    border-radius: 5px;
+    background: white ;
+    padding: 10px 20px;
+}
+#checkout p{
+    margin: 15px 0;
+    float: left;
+}
+#total-price,#total-item{
+    font-size: 25px;
+    color:var(--blackColor);
+}
+.cart-btn{
+    outline:none;
+    border: none;
+    background-color: var(--secondaryColor);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-size: 18px;
+    bottom: 30px;
+    margin: 15px 0;
+    cursor: pointer;
+}
+.cart-btn:active{
+    color:var(--blackColor);
+    background: none;
+    border: 1px solid --blackColor;
+}
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container-pay {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.pay-zone {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+label,
+select,
+input {
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+.con{
+    width: 800px;
+    height: 180px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+        text-align: center;
+        margin: 40px auto;;
+        /* border-radius: 0; */
+        /* background: white ; */
+        padding: 10px 20px;
+        position: relative;
+        text-align: center;
+        text-overflow: ellipsis;
+}
+.clock{
+    width: 100%;
+    height: 100%;
+    background-color: #008080;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(40x);
+}
+.con::before{
+    content: '';
+    width: 160px;
+    height: 160px;
+    background: #FFA500;
+    border-radius: 50%;
+    position: absolute;
+    right: -30px;
+    bottom: -50px;
+    z-index: -1;
+}
+.clock span{
+    font-size: 80px;
+    width: 110px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+.clock span::after{
+    font-size: 16pX;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translate(-50px);
+}
+#min::after{
+    content: 'MINUTES';
+
+}
+#sec::after{
+    content: 'SECONDS';
+
+}
+.time{
+    padding: 5%;
+    text-align: center;
+    margin: 40px auto;;
+    border-radius: 5px;
+    background: white ;
+    padding: 10px 20px;
+}
+.timer{
+    background-color: #008080;
+    color:black;
+    display:contents;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    height: 120px;
+    width: 120px;
+}
+#time{
+
+    background-color: #008080;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(40x);
+}

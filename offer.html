@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>.highlighterwrapper{
+        width: 100%;
+        display: flex;
+        padding: 1%;
+        border-radius: 8px;
+        gap: 2rem;
+        overflow-x: hidden;
+    }
+    .highlight-card{
+        display: flex;
+        flex-direction: row;
+        min-width: 100px;
+        width: 80%;
+        height: 100%;
+        gap: 1rem;
+        border-radius: 8px;
+        padding: 1%;
+        background-color: #008080;
+        cursor: pointer;
+    }
+    .highlight-img{
+        width: 15%;
+        height: 15%;
+        border-radius: 5px;
+        object-fit: cover;
+        object-position: center;
+    }
+    .highlight-desc h4 {
+         color: var(--blackColor);
+         font-size: 20px;
+    }
+    .highlight-desc p{
+        color: var(--blackColor);
+        font-size: 20px;
+    }
+    .highlight-card:hover{
+        background-color: #ffa500;
+        box-shadow: rgb(234, 228, 228) 0px 2px 8px 0px;
+    }
+    .main-menu{
+        min-height: 100%;
+        background-color:var(--);
+        padding: 2%;
+        border-radius: 8px;
+    }
+    .main-filter{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 1.5rem;
+        gap: 1rem;
+    }
+     </style>
+</head>
+<body>
+    <div class="main-highlighter">
+        <div class="main-header">
+          <!-- main heading  title section an arrow part-->
+          <h2 class="main-title">Special Offers</h2>
+           <div class="main-arrow">
+             <!-- left and right cursor -->
+             <ion-icon class="back" name="chevron-back-circle-outline"></ion-icon>
+             <ion-icon class="next" name="chevron-forward-circle-outline"></ion-icon>
+          </div>
+        </div>
+        <!-- highlighter menu -->
+        <div class="highlighterwrapper">
+               <div class="highlight-card">
+                  <img src="./images/chinese/specialofferBurger.jpg" class="highlight-img">
+                  <div class="highlight-desc">
+                       <h4>Special Black Burger</h4>
+                     <p>Rs 250.00</p>
+                  </div>
+               </div>
+        <div class="highlight-card">
+              <img src="./images/pizzza.jpg" class="highlight-img">
+              <div class="highlight-desc">
+                 <h4>Peperico Pizza </h4>
+                 <p>Rs 120.00</p>
+              </div>
+           </div>
+           <div class="highlight-card">
+              <img src="./images/logo.jpg" class="highlight-img">
+              <div class="highlight-desc">
+                 <h4>Mocktails combo </h4>
+                 <p>Rs 99.00</p>
+              </div>
+           </div>
+         </div>
+    </div>
+</body>
+</html>
